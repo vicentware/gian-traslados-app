@@ -1,0 +1,53 @@
+.onboarding-container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  height: 100vh
+  padding: 0
+  box-sizing: border-box
+
+  .header
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2rem
+
+    h1
+      font-weight: normal
+
+  .image-container
+    flex: 2
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    position: relative
+
+    img
+      width: 100%
+      height: auto
+      object-fit: contain
+
+      &.car-left
+        position: absolute
+        z-index: 4
+        bottom: 0
+
+      &.car-right
+        position: absolute
+        z-index: 3
+        bottom: 0
+
+      &.buildings
+        z-index: 1
+        margin: 0
+        top: 50%
+        left: 50%
+        transform: translateY(-47%)
+
+      &.highway
+        position: absolute
+        z-index: 2
+        bottom: 0
